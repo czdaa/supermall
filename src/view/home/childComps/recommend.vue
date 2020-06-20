@@ -6,6 +6,7 @@
         :key="value"
         :icon="value.image"
         :text="value.title"
+        :url="value.link"
       />
     </van-grid>
   </div>
@@ -18,10 +19,9 @@ export default {
       type: Array,
       default() {
         return [];
-      }
-    }
-  }
+      },
+    },
+  },
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>

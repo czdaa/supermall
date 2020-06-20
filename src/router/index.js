@@ -13,6 +13,8 @@ const home = () => import("../view/home/home.vue");
 const search = () => import('../view/search/search');
 const cart = () => import('../view/cart/cart');
 const mine = () => import('../view/mine/mine');
+const detail = () => import('../view/detail/childComps/goodsDetail')
+
 const routes = [{
     path: "",
     redirect: home,
@@ -33,6 +35,10 @@ const routes = [{
     path: '/mine',
     component: mine
   },
+  {
+    path: '/detail/:iid',
+    component: detail
+  }
 
 ];
 //创建路由对象

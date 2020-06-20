@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <router-view></router-view>
     <tap-bar />
   </div>
 </template>
@@ -9,8 +10,8 @@ import TapBar from "./components/content/tapbar";
 export default {
   name: "App",
   components: {
-    TapBar,
-  },
+    TapBar
+  }
 };
 </script>
 
